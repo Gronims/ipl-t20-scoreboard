@@ -2,40 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Basic Design System - All colors MUST be HSL */
+/* IPL T20 Dashboard Design System - All colors MUST be HSL */
 
 @layer base {
   :root {
-    /* Basic color palette */
-    --background: 0 0% 100%;
-    --foreground: 222 84% 5%;
+    /* IPL Brand Colors */
+    --background: 220 30% 4%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222 84% 5%;
+    --card: 220 25% 8%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 84% 5%;
+    --popover: 220 25% 8%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 222 47% 11%;
+    /* IPL Primary Blue */
+    --primary: 220 80% 55%;
     --primary-foreground: 210 40% 98%;
+    --primary-glow: 220 80% 65%;
 
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222 47% 11%;
+    /* IPL Orange Accent */
+    --secondary: 25 95% 53%;
+    --secondary-foreground: 220 30% 4%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 220 20% 15%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 210 40% 96%;
-    --accent-foreground: 222 47% 11%;
+    --accent: 25 95% 53%;
+    --accent-foreground: 220 30% 4%;
 
-    --destructive: 0 84% 60%;
+    /* Success Green for wins */
+    --success: 120 70% 50%;
+    --success-foreground: 210 40% 98%;
+
+    --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 222 84% 5%;
+    --border: 220 20% 18%;
+    --input: 220 20% 18%;
+    --ring: 220 80% 55%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* IPL Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-ipl: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    --gradient-live: linear-gradient(135deg, hsl(var(--success)), hsl(120 70% 40%));
+    --gradient-card: linear-gradient(135deg, hsl(var(--card)), hsl(220 25% 12%));
+
+    /* Shadows */
+    --shadow-glow: 0 0 30px hsl(var(--primary) / 0.3);
+    --shadow-live: 0 0 25px hsl(var(--success) / 0.4);
+    --shadow-card: 0 8px 25px -5px hsl(220 30% 2% / 0.3);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
